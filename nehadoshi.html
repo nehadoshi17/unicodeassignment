@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nehadoshi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">  
+        <link  href="styleua.css" rel="stylesheet" type="text/css"/>
+ 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body style="background-color:#FFD38A">
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container"> 
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                        <span class="icon-bar"></span>   
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="nehadoshi.html" class="navbar-brand">NEHA DOSHI</a>
+                </div>
+                <div id="myNavbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+					<li><a href="#edit">EDIT</a></li>
+					<li><a href="#socialmedia">SOCIAL LINKS</a></li>
+                    <li><a href="#timeline">TIMELINE</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#sh">SKILLS and HOBBIES</a></li>
+					</ul> 
+                </div>
+            </div>    
+        </nav>
+        <br><hr><br>
+	    <div class="namepic" style="width:100%">
+		<hr>
+			<div class="col-xs-offset-1 col-sm-offset-3 col-md-offset-1 col-xs-9 col-md-4">
+				<img class="img-responsive propp" src="prop.png" alt="profile" style="width:400px">
+			</div>
+			<div class="col-xs-12 col-md-6">
+			<div class="panel panel-info">
+				<div class="panel-heading name">	NEHA DOSHI </div>
+				<div class="panel-body details">
+				<i class="fa fa-briefcase"></i>COMPUTER ENGINEERING STUDENT
+				<hr>
+				<i class="fa fa-calendar"></i>Date of birth:29-10-2000<br><hr>
+				<div id="e1"><i class="fa fa-envelope"></i>Email-id: nehadoshi291@gmail.com<br></div><hr>
+				<div id="e2"><i class="fa fa-phone"></i>Contact number:9167166051</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="col-xs-12">
+		<div id="edit" class="col-md-offset-1 col-xs-12 col-md-5">
+		<center>
+		<h1>EDIT DETAILS HERE</h1><hr>
+		<div>
+		TO CHANGE EMAIL-ID CLICK ON<br><button class="button" onclick="myFunction1()">email-id</button><br>
+		<p id="demo1"></p><br>
+		<script>
+			function myFunction1() {
+			var person = prompt("Please enter new email-id", " ");
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			if (reg.test(person)==true) {
+			document.getElementById("demo1").innerHTML =
+			"Email-id succesfully updated,scroll up to check.";
+			document.getElementById("e1").innerHTML=
+			" Edited email-id: "+person;
+		}
+		    else{
+			document.getElementById("demo1").innerHTML =
+			"invalid format";
+		}
+		}
+		</script>
+		</div>
+		<div>
+		TO CHANGE PHONE NUMBER CLICK ON<br><button class="button" onclick="myFunction2()">contact</button>
+		<p id="demo2"></p>
+		<script>
+			function myFunction2() {
+			var contact = prompt("Please enter contact", " ");
+			var reg= /^\d{10}$/
+            if (reg.test(contact)== true)
+			{ 
+			document.getElementById("demo2").innerHTML =
+			"contact succesfully updated,scroll up to check.";
+			document.getElementById("e2").innerHTML=
+			" Edited contact number:"+contact;
+			}
+			else
+			{
+			document.getElementById("demo2").innerHTML =
+			"Unsuccessful, please enter valid format";
+			}
+		}
+		</script>
+		</div>
+		</center>
+		</div>
+		<div id="socialmedia" class="col-xs-12 col-md-6">
+		<center>
+		<h1>FIND ME HERE!</h1>
+		<hr>
+		<a href="https://github.com/nehadoshi17" class="fa fa-github"></a>
+		<a href="https://www.facebook.com/neha.doshi.908" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+	    <a href="#" class="fa fa-pinterest"></a>
+		<a href="#" class="fa fa-yahoo"></a>
+		</center>		
+		</div>
+		</div>
+		<div class="col-xs-12 me">
+		<div id="timeline" class="col-xs-offset-1 col-xs-10 col-md-5">
+		<h1>TIMELINE</h1><hr>
+			<div class="left">
+				<h1>2018-2022</h1>
+				<p>I'm currently a second year engineering student at D.J.Sanghvi college of engineering,
+				 I spend most of my time learning new aspects of computer engineering,
+				 I'd rather say that each day,I fall for this field a little more.<br>
+				 My current pointer is 9.82</p>
+			</div>
+			<div class="right">
+				<h1>2016-2018</h1>
+				<p>Completed high secondary eduction under the maharashtra state board from Sheth G.H. high school, Borivali.</p>
+			</div>
+			<div class="left">
+				<h1>2015-2016</h1>
+				<p>I've completed my schooling from Cambridge School,Kandivali from ICSE board.</p>
+			</div>
+			<div class="right">
+				<h1>Early years of school</h1>
+				<p>These are the best years of one's life, I'm sure you'd agree to that.
+				I was an active kid all my life,<br>
+				DANCING, SINGING AND ANCHORING were all beautiful highlihts of my school life.</p>
+			</div>
+		</div>
+		<div id="about" class="col-xs-offset-1 col-xs-10 col-md-4">
+	    <h1>More About Me</h1><hr>
+			<div class="training">
+			<h1>TRAINING</h1>
+			<hr>
+				<p>
+					WEB DEVELOPMENT TRAINING PROGRAM:<br>
+					I've completed this six week summer training program offerend by Internshala,
+					the course was a beginner's guide to development, majorly it was a frontend oriented syllabus.
+					The languages covered were HTML, CSS, Bootstrap, MySQL and PHP.
+				</p>
+				<button class="button"><a href="certificate.jpg">CERTIFICATE</a></button>
+                <button class="button"><a href="https://github.com/nehadoshi17/basicHCB.git">PROJECT</a></button>
+			</div>	
+			<div class="project">
+			<h1>PROJECT</h1>
+			<hr>
+				<p>
+					FAMILY BUSINESS WEBSITE:<br>
+					I'm currently also working on a simple website that uses HTML,CSS,Boostrap and Javascript.
+					since javascript wasnt included in the training program,I'm actively learning it from online sources.
+					You cn find my project in my github account, which is linked below.
+				</p>
+                <button class="button"><a href="https://github.com/nehadoshi17">GITHUB link</a></button>
+			</div>
+			<div class="resume">
+			<h1>RESUME</h1><hr>
+				<p>
+				 For any further details,<br>
+			     my resume is linked below.
+				</p>
+                <button class="button"><a href="nehadoshir.pdf">OPEN</a></button>
+			</div>
+		</div>
+		</div>	
+		<div id="sh" class="col-sm-offset-2 col-xs-12 col-sm-8 skillhobby">    
+		<center>
+		<h1>
+		SKILLS and HOBBIES
+		</h1>
+		<hr>Coding skills: 
+		<br>INTERMEDIATE LEVEL-HTML,CSS,Bootstrap.
+		<br>BEGINNER-Javascript,MySQL,PHP,Java.<hr>
+		Soft skills:
+		<br>Teamwork, Effective working under pressure and Adaptability.<hr>
+		Hobbies:
+		<br>My non-technical interests include playing the casio,
+		<br>singing,dancing and baking.
+		</p>
+		</center>
+		</div>
+		<div class="footer">
+        <p>Thank you for visiting!</p>
+        </div>
+	</body>
+</html>
